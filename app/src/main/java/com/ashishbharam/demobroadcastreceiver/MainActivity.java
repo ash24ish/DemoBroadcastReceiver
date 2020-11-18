@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         Log.d(TAG, "onCreate: " + permissionCheck);
 
         button.setOnClickListener(v -> {
-            //getPermission();
             if (ContextCompat.checkSelfPermission(this,Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED){
                 Log.i(TAG, "CheckPermission: Permission Already Granted ");
                 Toast.makeText(this, "Permission Already Granted", Toast.LENGTH_SHORT).show();
