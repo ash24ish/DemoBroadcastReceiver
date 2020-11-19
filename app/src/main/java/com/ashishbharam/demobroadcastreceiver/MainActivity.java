@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
     }
 
     public void askManualPermission(){
+        //creates dialog to take the user to app settings to manually enable the permission
         new AlertDialog.Builder(this)
                 .setTitle("Grant Receive SMS request")
                 .setMessage("As you have denied the permission earlier, you hav to " +
